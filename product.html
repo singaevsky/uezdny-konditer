@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Клубничные облака — Уездный кондитер</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <h1>Уездный кондитер</h1>
+        <p>Торты ручной работы</p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link">🛒 <span id="cart-count">0</span></a>
+        <a href="#" class="login-link">Вход</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div class="container">
+      <div class="product-grid">
+        <div class="product-gallery">
+          <img src="assets/images/tort1.jpg" alt="Клубничные облака" class="main-image">
+          <div class="thumbnail-gallery">
+            <img src="assets/images/tort1.jpg" alt="Вид 1" class="thumb active">
+            <img src="https://via.placeholder.com/100/f8eacd/333?text=Деталь" alt="Вид 2" class="thumb">
+            <img src=" https://via.placeholder.com/100/f8eacd/333?text=Форма" alt="Вид 3" class="thumb">
+          </div>
+        </div>
+
+        <div class="product-info">
+          <h1>Клубничные облака</h1>
+          <p class="product-category">Торт</p>
+          <div class="product-price"><strong>1500 ₽</strong></div>
+          <div class="product-features">
+            <p><strong>Вес:</strong> 1.5 кг</p>
+            <p><strong>Форма:</strong> Круглая</p>
+            <p><strong>Начинки:</strong> Клубничные облака</p>
+          </div>
+          <p class="product-description">
+            Нежный бисквит с воздушным кремом и свежей клубникой. Идеален для дня рождения и романтического ужина.
+          </p>
+          <div class="product-actions">
+            <button onclick="addToCart(1)" class="btn-primary">В корзину</button>
+            <button onclick="openCreateCakeModal()" class="btn-secondary">Создать свой торт</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="reviews-section">
+        <h2>Отзывы о товаре</h2>
+        <div class="reviews-list">
+          <div class="review-item">
+            <div class="review-header">
+              <strong>Анна</strong>
+              <span class="rating">⭐⭐⭐⭐⭐</span>
+              <small>15.07.2025</small>
+            </div>
+            <p class="review-text">Торт был потрясающим! Клубника свежая, крем нежный. Все гости в восторге.</p>
+          </div>
+        </div>
+        <p><small>Чтобы оставить отзыв, <a href="#">войдите</a> в аккаунт.</small></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Уездный кондитер. Демо-версия на GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
