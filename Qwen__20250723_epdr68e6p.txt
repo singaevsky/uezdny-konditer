@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /assets/uploads/
+
+Allow: /
+
+Sitemap:  https://singaevsky.github.io/uezdny-konditer/sitemap.xml 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Уездный кондитер — Свежие торты ручной работы</title>
+  <meta name="description" content="Кондитерская «Уездный кондитер» — торты ручной работы, натуральные ингредиенты, доставка по городу.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <h1>Уездный кондитер</h1>
+        <p>Торты ручной работы</p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link">🛒 <span id="cart-count">0</span></a>
+        <a href="#" class="login-link">Вход</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container text-center">
+      <h1>Ваш праздник начинается здесь</h1>
+      <p>Свежие торты ручной работы из натуральных ингредиентов</p>
+      <a href="catalog.html" class="btn-primary">Смотреть каталог</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Популярные торты</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="assets/images/tort1.jpg" alt="Клубничные облака">
+          <h3>Клубничные облака</h3>
+          <p>Нежный бисквит с клубникой и сливками</p>
+          <p class="price"><strong>1500 ₽</strong></p>
+          <button onclick="addToCart(1)" class="btn-secondary">В корзину</button>
+        </div>
+        <div class="product-card">
+          <img src="assets/images/tort2.jpg" alt="Шоколадный бум">
+          <h3>Шоколадный бум</h3>
+          <p>Интенсивный шоколадный вкус</p>
+          <p class="price"><strong>1700 ₽</strong></p>
+          <button onclick="addToCart(2)" class="btn-secondary">В корзину</button>
+        </div>
+        <div class="product-card">
+          <img src="assets/images/tort3.jpg" alt="Савоярди">
+          <h3>Савоярди</h3>
+          <p>Французский десерт с маскарпоне и кофе</p>
+          <p class="price"><strong>1900 ₽</strong></p>
+          <button onclick="addToCart(3)" class="btn-secondary">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container text-center">
+      <h2>Создайте свой идеальный торт</h2>
+      <p>Выберите форму, начинку, декор и событие — мы воплотим вашу мечту</p>
+      <button onclick="openCreateCakeModal()" class="btn-primary">Создать торт</button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Уездный кондитер</h3>
+          <p>Свежие торты ручной работы из натуральных ингредиентов.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Контакты</h3>
+          <p>📞 +7 (495) 123-45-67</p>
+          <p>📍 ул. Пушкина, д. 5</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Уездный кондитер. Демо-версия на GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно создания торта -->
+  <div id="create-cake-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span onclick="closeCreateCakeModal()" style="float:right;cursor:pointer;">&times;</span>
+      <h2>Создайте свой торт</h2>
+      <form>
+        <label>Событие:</label>
+        <select>
+          <option>День рождения</option>
+          <option>Свадьба</option>
+          <option>Юбилей</option>
+        </select>
+        <label>Форма:</label>
+        <select>
+          <option>Круглая</option>
+          <option>Квадратная</option>
+          <option>Сердце</option>
+        </select>
+        <label>Начинки (до 3):</label>
+        <select multiple>
+          <option>Клубничные облака</option>
+          <option>Шоколадный бум</option>
+          <option>Малиновый рай</option>
+        </select>
+        <button type="button" class="btn-primary" onclick="alert('Заявка отправлена! Мы свяжемся с вами.'); closeCreateCakeModal();">
+          Отправить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
