@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Каталог тортов — Уездный кондитер</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <h1>Уездный кондитер</h1>
+        <p>Торты ручной работы</p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html" class="active">Каталог</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link">🛒 <span id="cart-count">0</span></a>
+        <a href="#" class="login-link">Вход</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="catalog-page">
+    <div class="container">
+      <h1>Каталог тортов</h1>
+
+      <aside class="filters">
+        <form class="filter-form">
+          <div class="filter-group">
+            <label>Категория:</label>
+            <select>
+              <option>Все</option>
+              <option>Торты</option>
+              <option>Десерты</option>
+              <option>Кексы</option>
+              <option>Пироги</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Начинка:</label>
+            <select>
+              <option>Любая</option>
+              <option>Клубничные облака</option>
+              <option>Шоколадный бум</option>
+              <option>Малиновый рай</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Цена от:</label>
+            <input type="number" placeholder="0">
+          </div>
+          <div class="filter-group">
+            <label>до:</label>
+            <input type="number" placeholder="5000">
+          </div>
+          <button type="button" class="btn-primary">Применить</button>
+        </form>
+      </aside>
+
+      <section class="product-grid">
+        <div class="product-card">
+          <img src="assets/images/tort1.jpg" alt="Клубничные облака">
+          <h3>Клубничные облака</h3>
+          <p>Нежный бисквит с клубникой и сливками</p>
+          <p class="price"><strong>1500 ₽</strong></p>
+          <button onclick="addToCart(1)" class="btn-secondary">В корзину</button>
+        </div>
+        <div class="product-card">
+          <img src="assets/images/tort2.jpg" alt="Шоколадный бум">
+          <h3>Шоколадный бум</h3>
+          <p>Интенсивный шоколадный вкус</p>
+          <p class="price"><strong>1700 ₽</strong></p>
+          <button onclick="addToCart(2)" class="btn-secondary">В корзину</button>
+        </div>
+        <div class="product-card">
+          <img src="assets/images/tort3.jpg" alt="Савоярди">
+          <h3>Савоярди</h3>
+          <p>Французский десерт с маскарпоне и кофе</p>
+          <p class="price"><strong>1900 ₽</strong></p>
+          <button onclick="addToCart(3)" class="btn-secondary">В корзину</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Уездный кондитер. Демо-версия на GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
